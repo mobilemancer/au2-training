@@ -1,26 +1,27 @@
-<import from="./customer-info1.html"></import>
-<import from="./customer-info2"></import>
+<import from="./customer-info-htmlonly.html"></import>
+<import from="./customer-info"></import>
 
 <h1>This is the customer page</h1>
 
+
+<h3>A simple component</h3>
 <p>
-    Welcome <customer-info2></customer-info2>
+    Welcome <customer-info></customer-info>
+</p>
+
+<h3>A html only component</h3>
+<p>
+    <!-- simple binding -->
+    Welcome <customer-info-htmlonly></customer-info-htmlonly>
 </p>
 
 <p>
     <!-- simple binding -->
-    Welcome <customer-info1 name="Frigg" sex="female"></customer-info1>
+    Welcome <customer-info-htmlonly name="Frigg" sex="female"></customer-info-htmlonly>
 </p>
 
-
+<h3>A component with binding</h3>
 <p>
     <!-- simple binding -->
-    Welcome <customer-info2 name="Freja" sex="female"></customer-info2>
-</p>
-
-<p>
-    <!-- conditional templating -->
-    <!-- TODO -->
-
-<div if.bind=""></div>
+    Welcome <customer-info name="Freja" sex="female"></customer-info>
 </p>

@@ -1,0 +1,20 @@
+<h1>Templating, Repeater & Conditionals</h1>
+
+<!-- Repeating over all avengers, showing the name -->
+<h3>Repeater</h3>
+<div class="repeater-box">
+    <div repeat.for="avenger of avengers">${avenger['name/alias']}</div>
+</div>
+
+<!-- Repeating over all avengers, showing the name for only females -->
+<h3>Repeater & Conditionals</h3>
+<div class="repeater-box">
+    <div repeat.for="avenger of avengers" if.bind="avenger.gender=='female'">${avenger['name/alias']}</div>
+</div>
+
+<!-- Repeating over all avengers, showing the name for only males tah never died-->
+<h3>Repeater & More Conditionals</h3>
+<div class="repeater-box">
+    <div repeat.for="avenger of avengers" hide.bind="avenger.gender=='female'" show.bind="avenger.death1=='yes'">
+        ${avenger['name/alias'] || 'Unknown Name'}</div>
+</div>

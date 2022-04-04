@@ -1,0 +1,14 @@
+<import from="./avenger-info"></import>
+
+<h1>Binding</h1>
+
+<h3>Binding to Components</h3>
+
+<div class="repeater-box-large">
+    <div repeat.for="avenger of avengers">
+        <avenger-info name.bind="avenger['name/alias']" url.bind="avenger.url" death1.bind="avenger.death1"
+            death2.bind="avenger.death2" death3.bind="avenger.death3" death4.bind="avenger.death4"
+            death5.bind="avenger.death5">
+        </avenger-info>
+    </div>
+</div>

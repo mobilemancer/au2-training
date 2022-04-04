@@ -1,3 +1,21 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+nav a {
+  margin: 8px
+}
+
+nav a:visited {
+  color: azure;
+}
+
 .message {
   background-color: lightblue;
 }

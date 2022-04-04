@@ -1,0 +1,6 @@
+.repeater-box-large {
+    height: 32rem;
+    scroll-behavior: auto;
+    overflow-y: scroll;
+    border: 1px solid black;
+}

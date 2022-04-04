@@ -1,0 +1,14 @@
+<h3>${name} <a href.bind="url" external>🌐</a></h3>
+
+<span if.bind="deaths === 0">Never died! 🥇</span>
+<span else>
+    Deaths:
+    <span if.bind="deaths === 1">💀</span>
+    <span if.bind="deaths === 2">💀💀</span>
+    <span if.bind="deaths === 3">💀💀💀</span>
+    <span if.bind="deaths === 4">💀💀💀💀</span>
+    <span if.bind="deaths === 5">💀💀💀💀💀</span>
+</span>
+
+
+<!-- <button click.delegate="dump()">Debug</button> -->

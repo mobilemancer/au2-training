@@ -1,6 +1,6 @@
 import { bindable } from "aurelia";
 
-export class CustomerInfo2 {
+export class CustomerInfo {
     @bindable public name = "Tor";
     @bindable public sex = "Male";
 }
