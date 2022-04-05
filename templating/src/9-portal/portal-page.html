@@ -1,0 +1,10 @@
+<h1>Portal</h1>
+
+<h3>Top</h3>
+<div ref="top"></div>
+<div portal>Portalled to the bottom!</div>
+
+<button portal="#menu">Look Ma' I'm in the menu!</button>
+
+<h3>Bottom</h3>
+<div portal.bind="top">Portalled from bottom!</div>

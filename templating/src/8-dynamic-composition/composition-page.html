@@ -1,0 +1,16 @@
+<h1>Dynamic Composition</h1>
+
+<h3>Model in Parent Scope</h3>
+<au-compose view="<p>Hello ${myObj.name}.</p>"></au-compose>
+
+<h3>Inline model</h3>
+<au-compose view.bind="'<p>Hello ${name}.</p>'" view-model.bind="{name: 'Voyado'}"></au-compose>
+
+<h3>A Counter</h3>
+<au-compose repeat.for="i of 5" view-model.bind="{ value: i }" view.bind="'<div>${value}</div>'"></au-compose>
+
+<h3>View From Template in Model</h3>
+<au-compose view.bind="viewFromModel"></au-compose>
+
+<h3>Reading View From File</h3>
+<au-compose view.bind="view.template" view-model.bind="{ name: 'Voyado' }"></au-compose>
