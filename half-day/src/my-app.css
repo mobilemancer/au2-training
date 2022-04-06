@@ -16,6 +16,10 @@ nav a:visited {
   color: azure;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .message {
   background-color: lightblue;
 }
