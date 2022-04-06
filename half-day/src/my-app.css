@@ -16,6 +16,14 @@ nav a:visited {
   color: azure;
 }
 
+nav button {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: hotpink;
+  padding: 6px;
+  border: 3px solid white
+}
+
 .active {
   font-weight: bold;
 }
