@@ -1,15 +1,22 @@
+:root {
+  --padding--small: 8px;
+  --padding: 16px;
+  --color--grey: #ccc;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 nav {
   background-color: black;
   color: white;
-  padding: 16px;
+  padding: var(--padding);
 }
 
 nav a {
-  margin: 8px
+  margin: var(--padding--small);
 }
 
 nav a:visited {
@@ -20,7 +27,7 @@ nav button {
   font-family: 'Poppins', sans-serif;
   color: white;
   background-color: hotpink;
-  padding: 6px;
+  padding: var(--padding--small);
   border: 3px solid white
 }
 
@@ -30,4 +37,12 @@ nav button {
 
 .message {
   background-color: lightblue;
+}
+
+.page-full-height {
+  /* full page height - the nav bar height */
+  height: calc(100vh - 56px - 2 * var(--padding));
+  display: flex;
+  flex-direction: column;
+  margin: var(--padding);
 }

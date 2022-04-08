@@ -8,28 +8,16 @@ export class AvengerInfo {
     @bindable death4;
     @bindable death5;
     @bindable url;
+    @bindable info;
 
     public deaths = 0;
 
-    public dump(): void {
-        console.log(this.name, this.deaths, this.url);
+    public bound(): void {
+        this.deaths = this.deathNoticeToNumber(this.death1) + this.deathNoticeToNumber(this.death2) + this.deathNoticeToNumber(this.death3) + this.deathNoticeToNumber(this.death4) + this.deathNoticeToNumber(this.death5);
     }
 
-    public bound(): void {
-        if (this.death1) {
-            this.deaths++;
-        }
-        if (this.death2) {
-            this.deaths++;
-        }
-        if (this.death3) {
-            this.deaths++;
-        }
-        if (this.death4) {
-            this.deaths++;
-        }
-        if (this.death5) {
-            this.deaths++;
-        }
+    private deathNoticeToNumber(deathNotice: string): number {
+        if (deathNotice === "yes") return 1;
+        else return 0;
     }
 }

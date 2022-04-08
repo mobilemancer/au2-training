@@ -1,6 +1,7 @@
 .repeater-box-large {
-    height: 32rem;
     scroll-behavior: auto;
     overflow-y: scroll;
-    border: 1px solid black;
+    border: 1px solid var(--color--grey);
+    display: flex;
+    flex-wrap: wrap;
 }

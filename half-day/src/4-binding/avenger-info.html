@@ -1,14 +1,17 @@
-<h3>${name} <a href.bind="url" external>🌐</a></h3>
+<div class="avenger-info">
+    <div class="name">${name}</div>
 
-<span if.bind="deaths === 0">Never died! 🥇</span>
-<span else>
-    Deaths:
-    <span if.bind="deaths === 1">💀</span>
-    <span if.bind="deaths === 2">💀💀</span>
-    <span if.bind="deaths === 3">💀💀💀</span>
-    <span if.bind="deaths === 4">💀💀💀💀</span>
-    <span if.bind="deaths === 5">💀💀💀💀💀</span>
-</span>
+    <div if.bind="deaths === 0">Never died! 🥇</div>
+    <div else>
+        Deaths:
+        <span if.bind="deaths === 1">💀</span>
+        <span if.bind="deaths === 2">💀💀</span>
+        <span if.bind="deaths === 3">💀💀💀</span>
+        <span if.bind="deaths === 4">💀💀💀💀</span>
+        <span if.bind="deaths === 5">💀💀💀💀💀</span>
+    </div>
 
+    <div class="info">${info}</div>
 
-<!-- <button click.delegate="dump()">Debug</button> -->
+    <a class="button-like" href.bind="url" external>More Info</a>
+</div>
